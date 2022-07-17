@@ -1,0 +1,41 @@
+{% extends "Porfolio/Inicio.html"%}
+
+    {%load static %}
+    {% block contacto %}
+
+    {% endblock %}
+{% block ADMINISTAR %}
+{% endblock %}
+
+  
+{% block contacto2 %}
+
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        {% if experiencia %}
+        {% for p in experiencia %}
+        <ul class="timeline">
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{p.año}}</h4>
+                        <h4 class="subheading">{{p.titulo}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{p.descripcion}}</p></div>
+                </div>
+            </li>
+        {% endfor%}
+        {% endif %}
+        </ul>
+    </div>
+</section>
+
+
+{% endblock %}
+{% block ADMINISTAR2 %}
+{% endblock %}

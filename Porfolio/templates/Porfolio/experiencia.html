@@ -1,0 +1,51 @@
+{% extends "Porfolio/Inicio.html"%}
+
+    {%load static %}
+    {% block experiencia %}
+    <li class="nav-item"><a class="nav-link" href="#about">EXPERIENCIA</a></li>
+    {% endblock %}
+    
+
+{% block experiencia2 %}
+
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Experiencia</h2>
+            <h3 class="section-subheading text-muted">Historial Profesional.!</h3>
+        </div>
+        {% if persona %}
+        {% for p in persona %}
+        <ul class="timeline">
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{p.imagen.url}}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{p.año}}</h4>
+                        <h4 class="subheading">{{p.titulo}}</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">{{p.descripcion}}</p></div>
+                </div>
+            </li>
+        {% endfor%}
+        {% endif %}
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        Se Parte 
+                        <br />
+                        de mi
+                        <br />
+                       Historia!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+

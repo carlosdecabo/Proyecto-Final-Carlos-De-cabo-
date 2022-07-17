@@ -1,0 +1,43 @@
+{% extends "Porfolio/Inicio.html"%}
+
+    {%load static %}
+    {% block REFERENCIAS %}
+    <li class="nav-item"><a class="nav-link" href="#team">REFERENCIAS</a></li>
+    {% endblock %}
+
+{% block REFERENCIAS2 %}
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">REFERENCIAS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{%static 'Porfolio/assets/img/team/1.jpg'%}" alt="..." />
+                            <h4>Diego G. Makler</h4>
+                            <p class="text-muted">Director of Development at Netcontent & Argontech</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/diego-g-makler-3960ab1/" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{%static 'Porfolio/assets/img/team/2.jpg'%}" alt="..." />
+                            <h4>Marian Quintana Rodriguez</h4>
+                            <p class="text-muted">Director of Digital Transformation at Netcontent & Argontech</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/marian-quintana/" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{%static 'Porfolio/assets/img/team/3.jpg'%}" alt="..." />
+                            <h4>Yesenia Bejarano</h4>
+                            <p class="text-muted">Project Manager IT / Certified Scrum Master</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/yesenia-bejarano-b2057764/" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        {% endblock %}

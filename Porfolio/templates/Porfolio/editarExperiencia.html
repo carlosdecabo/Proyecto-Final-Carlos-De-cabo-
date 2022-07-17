@@ -1,0 +1,55 @@
+{% extends "Porfolio/Inicio.html"%}
+
+    {%load static %}
+    {% block contacto %}
+    <li class="nav-item"><a class="nav-link" href="{% url 'administrar'%}">ADMINISTRAR</a></li>
+    {% endblock %}
+{% block ADMINISTAR %}
+{% endblock %}
+
+  
+{% block contacto2 %}
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">REGISTRO DE EXPERIENCIA</h2>
+        </div>
+
+        <form id="contactForm" action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    
+                <div class="form-group">
+                    <!-- Name input-->
+                    <input class="form-control" name="titulo" type="text" placeholder="TITULO *" data-sb-validations="required" {{ miFormulario.titulo }} />
+                </div>
+                <div class="form-group">
+                    <!-- Email address input-->
+                    <input class="form-control" name="año" type="text" placeholder="PERIODO *" data-sb-validations="required" {{ miFormulario.año }}/>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <!-- Message input-->
+                        <input class="form-control" name="descripcion" type="text" placeholder="DESCRIPCION *" data-sb-validations="required" {{ miFormulario.descripcion }}/>
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <!-- Message input-->
+                        <input class="form-control" name="imagen" type="file" data-sb-validations="required" {{miFormulario.imagen.url}}/>
+                    </div> 
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+            <!-- Submit Button-->
+            <div class="text-center"><button type="submit" class="btn btn-primary btn-block mb-4" >REGISTRAR</button></div>
+
+        </form>
+    </div>
+</section>
+{% endblock %}
+{% block ADMINISTAR2 %}
+{% endblock %}

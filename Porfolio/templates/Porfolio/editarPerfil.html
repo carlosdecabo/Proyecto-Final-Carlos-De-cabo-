@@ -1,0 +1,29 @@
+{% extends "Porfolio/Inicio.html"%}
+
+    {%load static %}
+{% block ADMINISTAR %}
+{% endblock %}
+
+  
+{% block contacto2 %}
+
+<section class="page-section" id="">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">EDITAR USUARIO</h2>
+        </div>
+        <form action="" method="POST"> {% csrf_token %}
+            
+            <table>
+                {{miFormulario.as_table}}    
+            </table>
+
+            <input type="submit", value="Enviar">
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}
+{% block ADMINISTAR2 %}
+{% endblock %}

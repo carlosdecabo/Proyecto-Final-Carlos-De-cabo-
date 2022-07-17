@@ -1,0 +1,30 @@
+
+{% extends "Porfolio/Inicio.html"%}
+
+{%load static %}
+{% block ADMINISTAR %}
+{% endblock %}
+
+  
+{% block contacto2 %}
+
+<section class="page-section" id="">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">INICIO DE USUARIO</h2>
+        </div>
+
+        <form action="" method="POST">{%csrf_token%}
+        
+            {{form.as_p}}
+    
+           <button type="submit"> Iniciar Sesión</button>
+           <button><a href="register">Si no tiene usuario, puede registrarse.</a></button>
+
+    </div>
+</section>
+
+
+{% endblock %}
+{% block ADMINISTAR2 %}
+{% endblock %}
