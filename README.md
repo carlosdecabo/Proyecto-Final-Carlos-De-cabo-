@@ -3,7 +3,7 @@
 
 Esta en una Página Web PORFOLIO. Demostrativo referencia a la experiencia y habilidades técnicas que poseo en mi ámbito Profesional
 ## Link de Video demostrativo de la APP
-- [@Carlos De cabo]( https://drive.google.com/file/d/10KU8ku7qsih0RkpXOgkGWFxjF6bFONyx/view?usp=sharing)
+- [@Video]( https://drive.google.com/file/d/10KU8ku7qsih0RkpXOgkGWFxjF6bFONyx/view?usp=sharing)
 ## Documentación
 Este es un Proyecto diseñado y realizado bajo el lenguaje de programación Django, se utilizo para el desempeño visual una plantilla de bootstrap modificada y adaptada a la necesidad, en la cual renderizo los datos desde el backend, usando la herencia de padre a hijo para altenar las diferentes vistas.
 ## models.pý
